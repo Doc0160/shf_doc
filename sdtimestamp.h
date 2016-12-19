@@ -29,7 +29,7 @@ int64_t sdTimestamp(void);
 #define SDTS_PLATFORM SDT_UNIX
 #endif
 
-#if SDT_PLATFORM == SDT_WINDOWS
+#if SDTS_PLATFORM == SDTS_WINDOWS
 
 //NOTE(doc): supposing you have included windows.h before
 
@@ -56,6 +56,7 @@ int _gettimeofday(struct timeval* p, void* tz) {
     return 0;
 }
 
+//TODO(doc): properly test that
 int64_t
 timestamp(void) {
     struct timeval tv;
@@ -63,6 +64,10 @@ timestamp(void) {
     if (-1 == ret) return -1;
     return (int64_t) ((int64_t) tv.tv_sec * 1000 + (int64_t) tv.tv_usec / 1000);
 }
+
+#elif SDTS_PLATFORM == SDTS_MAC
+
+SDTIMESTAMP NOT IMPLEMENTED YET FOR MAC
 
 #else
 
