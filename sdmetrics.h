@@ -9,7 +9,7 @@
 #if !defined(SDMETRICS_H)
 #define SDMETRICS_H
 
-/******** Length Conversion Macros **********/
+// Length Conversion Macros
 
 #define CM_TO_IN(x) (0.3937F * (x))
 #define IN_TO_CM(x) (2.54F * (x))
@@ -31,7 +31,7 @@
 #define MILE_TO_FT(x) (5280.0 * (x))
 #define MILE_TO_YARD(x) (1760.0 * (x))
 
-/******* Weight Macros ************/
+//NOTE(doc): Weight Macros
 
 #define G_TO_OZ(x) (0.03527F * (x))
 #define KG_TO_LBS(x) (2.2046F * (x))
@@ -40,7 +40,7 @@
 #define OZ_TO_G(x) (28.3527F * (x))
 #define OZ_TO_LBS(x) ((x) / 16.0)
 
-/******* Liquid Conversion Macros ********/
+//NOTE(doc): Liquid Conversion Macros
 
 #define CL_TO_OZ(x) (0.338F * (x))
 #define ML_TO_OZ(x) (0.0338F * (x))
@@ -75,7 +75,7 @@
 #define USQ_TO_L(x) (0.945F * (x))
 #define USQ_TO_UKQ(x) (0.8F * (x))
 
-/**** Area Conversion Macros ****/
+//NOTE(doc): Area Conversion Macros
 
 #define CM2_TO_IN2(x) (0.155F * (x))
 #define FT2_TO_M2(x) (0.0930F * (x))
@@ -86,7 +86,7 @@
 #define MILE2_TO_KM2(x) (2.5906F * (x))
 #define MM2_TO_IN2(x) (0.00155F * (x))
 
-/******** Volume Conversion Macros *********/
+//NOTE(doc): Volume Conversion Macros
 
 #define CM3_TO_IN3(x) (0.061F * (x))
 #define CM3_TO_IN3(x) (0.061F * (x))
