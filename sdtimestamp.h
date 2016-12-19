@@ -61,6 +61,7 @@ int64_t
 timestamp(void) {
     struct timeval tv;
     int ret = _gettimeofday(&tv, NULL);
+    //TODO(doc): ret will never == to -1 ?
     if (-1 == ret) return -1;
     return (int64_t) ((int64_t) tv.tv_sec * 1000 + (int64_t) tv.tv_usec / 1000);
 }
