@@ -6,11 +6,11 @@
    $Notice: (C) Copyright 2016 by Tristan Magniez. All Rights Reserved. $
    ======================================================================== */
 
-#if !defined(SDT_H)
+#if !defined(SDTIME_H)
 
 float sdtTime();
 
-#define SDT_H
+#define SDTIME_H
 #endif
 
 #ifdef SDT_IMPLEMENTATION
