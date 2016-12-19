@@ -9,7 +9,7 @@
 #if !defined(SDMETRICS_H)
 #define SDMETRICS_H
 
-// Length Conversion Macros
+//NOTE(doc): Length Conversion Macros
 
 #define CM_TO_IN(x) (0.3937F * (x))
 #define IN_TO_CM(x) (2.54F * (x))
