@@ -45,7 +45,7 @@ float sdtTime();
 
 //NOTE(doc): supposing you have included windows.h before
 
-float sdtTime()
+inline float sdtTime()
 {
     static int first = 1;
     static LARGE_INTEGER prev;
@@ -73,7 +73,7 @@ float sdtTime()
 
 #include <mach/mach_time.h>
     
-float sdtTime()
+inline float sdtTime()
 {
     static int first = 1;
     static uint64_t prev = 0;
@@ -99,7 +99,7 @@ float sdtTime()
 
 #include <time.h>
     
-float sdtTime()
+inline float sdtTime()
 {
     static int first = 1;
     struct timespec prev;
