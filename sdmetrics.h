@@ -3,7 +3,7 @@
    $Date: $
    $Revision: $
    $Creator: Tristan Magniez $
-   $Notice: (C) Copyright 2010 by Megrov, Inc. All Rights Reserved. $
+   $Notice: (C) Copyright 2016 by Megrov, Inc. All Rights Reserved. $
    ======================================================================== */
 
 #if !defined(SDMETRICS_H)
