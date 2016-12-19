@@ -31,6 +31,8 @@ int64_t sdTimestamp(void);
 
 #if SDT_PLATFORM == SDT_WINDOWS
 
+//NOTE(doc): supposing you have included windows.h before
+
 int _gettimeofday(struct timeval* p, void* tz) {
     ULARGE_INTEGER ul; // As specified on MSDN.
     FILETIME ft;
