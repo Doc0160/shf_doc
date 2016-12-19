@@ -9,8 +9,6 @@
 #if !defined(SDMETRICS_H)
 #define SDMETRICS_H
 
-
-
 /******** Length Conversion Macros **********/
 
 #define CM_TO_IN(x) (0.3937F * (x))
@@ -49,17 +47,16 @@
 #define OZ_TO_CL(x) (2.95857988F * (x))
 #define OZ_TO_ML(x) (29.5857F * (x))
 
-/***********************************************
-*
-*      In case you are unaware there are:
-*           16 ounces in a US quart
-*           20 ounces in a UK quart
-*
-*  This, of course, makes gallons different
-*     too.  Supplied below are US to UK
-*           conversions as well.
-*
-************************************************/
+/*
+NOTE(doc):
+  In case you are unaware there are:
+  16 ounces in a US quart
+  20 ounces in a UK quart
+
+  This, of course, makes gallons different
+  too.  Supplied below are US to UK
+  conversions as well.
+*/
 
 #define KL_TO_UKGAL(x) (211.344F * (x))
 #define KL_TO_USGAL(x) (264.18F * (x))
