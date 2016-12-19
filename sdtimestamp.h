@@ -43,7 +43,6 @@ int _gettimeofday(struct timeval* p, void* tz) {
     ul.QuadPart -= 11644473600000000ULL;
     p->tv_usec = (long) (ul.QuadPart % 1000000LL);
     p->tv_sec = (long) (ul.QuadPart / 1000000LL);
-
     return 0;
 }
 
